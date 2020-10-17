@@ -5,16 +5,16 @@ void main()
   int i,j, k;
   clrscr();
 
-  for(i = 0; i < 24; i++);
+  for(i = 0; i < 24; i++)
   {
-     for(j = i; j >= 0; j--);
+     for(j = 23 - 1; j >=i ; j--)
      {
 	printf(" ");
      }
      for(k = 0; k <= i; k++)
-       printf("*");
-     printf("\n");
+	printf("*");
+	printf("\n");
   }
+getch();
 
-  getch();
 }
